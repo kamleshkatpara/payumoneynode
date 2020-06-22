@@ -38,8 +38,8 @@ var paymentData = {
     phone: "",
     lastname: "",
     firstname: "",
-    surl: "", //"http://localhost:3000/payu/success"
-    furl: "", //"http://localhost:3000/payu/fail"
+    surl: "http://localhost:3000/payu/success", // Here you can capture success
+    furl: "http://localhost:3000/payu/fail", // Here you can capture failure
 };
 
 payumoney.makePayment(paymentData, function(error, response) {
@@ -87,7 +87,7 @@ payumoney.refundStatus("paymentId", function(error, response) {
 
 ---
 ### Submit issues
-You can raise an issue in this repo or mail me at pwnkumar016@gmail.com
+You can raise an issue in this repo or mail me at mekamleshk@gmail.com
 
 
 [keys]: https://www.payumoney.com/merchant/settings/#/myaccount

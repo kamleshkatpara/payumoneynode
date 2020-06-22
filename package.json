@@ -1,5 +1,5 @@
 {
-  "name": "payumoneynode",
+  "name": "@kamleshkatpara/payumoneynode",
   "version": "1.0.0",
   "description": "PayuMoney Module for NodeJs",
   "main": "lib/index.js",
@@ -10,8 +10,8 @@
     "lint": "tslint -p tsconfig.json",
     "test": "jest --config jestconfig.json",
     "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run lint",
-    "preversion": "npm run lint",
+    "prepublishOnly": "npm run build",
+    "preversion": "npm run build",
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags"
   },

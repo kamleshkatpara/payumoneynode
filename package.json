@@ -41,6 +41,7 @@
     "typescript": "^3.9.5"
   },
   "dependencies": {
+    "@types/qs": "^6.9.3",
     "axios": "^0.19.2",
     "js-sha512": "^0.8.0",
     "qs": "^6.9.4"

@@ -1,0 +1,47 @@
+{
+  "name": "payumoneynode",
+  "version": "1.0.0",
+  "description": "PayuMoney Module for NodeJs",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "test": "jest --config jestconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "files": [
+    "lib /**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamleshkatpara/payumoneynode.git"
+  },
+  "keywords": [
+    "payu, payumoney, payumoney nodejs, payumoney integration, payumoney nodejs integration"
+  ],
+  "author": "Kamlesh Katpara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kamleshkatpara/payumoneynode/issues"
+  },
+  "homepage": "https://github.com/kamleshkatpara/payumoneynode#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.0",
+    "jest": "^26.0.1",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.1.1",
+    "tslint": "^6.1.2",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "qs": "^6.9.4"
+  }
+}
